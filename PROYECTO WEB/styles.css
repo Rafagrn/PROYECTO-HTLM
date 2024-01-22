@@ -1,0 +1,511 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main{
+    background-color: wheat;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    align-items: center;
+}
+/* inicio Cabecera */
+    .cabecera{
+            background-color:white;
+            width: 100%;
+            height: 100px;
+            text-decoration: none;
+            
+             
+}
+.cabecera_link{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    color: #333333;
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+.cabecera_img{
+    position: relative;
+        object-fit: cover;
+        top: 5%;
+        height: 80%;
+        right: -10%;
+
+}
+.cabecera_a{
+    position: relative;
+    height: 30%;
+    width:64% ;
+    align-items:center;
+    background-color:white;
+    top: -55%;
+    right: -50%;
+
+    }
+    .cabecera a{
+        text-decoration: none;
+        color: #333333;
+        font-size: 14px;
+        font-weight: 600;
+       
+        
+     }
+.cabecera a:hover{
+    color: red;
+    
+}
+.banner{
+    
+    background-position: center;
+    width: 100%;
+    height: 80vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    align-items: center;
+}
+
+
+.banner h1{
+    font-size: 75px;
+    color:white;
+    width: 80%;
+|   height: 10%;
+     position: absolute;
+     top: 40%;
+     left: 15%;
+          
+}
+.banner h2{
+    font-size: 18px;
+    font-style: italic;
+    color:white;
+    width: 70%;
+    height: 15%;
+    position: absolute;
+    text-align: center;
+    top: 55%;
+     left: 18%;
+       
+              
+}
+.button1{
+    display: flex;
+    position: absolute;
+    background-color: #333333;
+    align-items: center;
+    height: 6%;
+    width: 15%;
+    top:80%;
+    right: 55%; 
+    font-size: 16px;
+    color: white;
+    font-family:"-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;;
+
+}
+.button2{
+
+    display: flex;
+    position: absolute;
+    background-color:transparent;
+    align-items: center;
+    text-align:justify;
+    height: 6%;
+    width: 12,5%;
+    top:80%;
+    left: 55%;
+    font-size: 16px;
+    color: white;
+    font-family:"-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;;
+
+}
+
+/* inicio hoja tres */
+.banner-2{
+    background-color:rgb(253, 251, 251) ;
+    width: 100%;
+    height: 90vh;
+    flex-direction:row;
+    justify-content:center;
+    justify-content: center;
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    align-items: center;
+    padding: 1% 0;
+}
+.tituloa{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    padding: 5% 10%;
+    color: #aaa;
+    
+}
+.tituloa h3{
+    font-size: 12px;
+align-items: center;
+justify-content: center;
+
+}
+.tituloa h2{
+        font-size: 45px;
+    align-items: center;
+    justify-content: center;
+    color: #333333;
+}
+.bloque{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 75vh;
+}
+.bloque-1{
+    
+    width: 25%;
+    height: 45vh ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}.bloque-2{
+    
+    width: 25%;
+    height: 45vh ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.bloque-3{
+    
+    width: 25%;
+    height: 45vh ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.bloque-4{
+    
+    width: 25%;
+    height: 45vh ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.bloque-1 img{
+        width: 80%;
+        display: flex;
+        margin: 10% 0;
+ }
+.bloque-2 img{
+    width: 80%;
+    display: flex;
+     margin: 5% 0;
+ }
+ .bloque-3 img{
+    width: 80%;    
+ }
+
+.bloque-4 img{
+   width: 80%;    
+}
+
+.b1-titulo {
+ color: #333333;   
+}
+.b2-titulo {
+    color: #333333;   
+   }
+.b3-titulo {
+ color: #333333;   
+}   
+.b4-titulo {
+    color: #333333;   
+   }
+.b1-parrafo{
+    display: flex; 
+    margin: 2% 0;  
+    color: #aaa; 
+}
+
+.b2-parrafo{
+display: flex; 
+margin: 2% 0;   
+color: #aaa
+}
+.b3-parrafo{       
+ color: #aaa
+    }
+.b4-parrafo{      
+color: #aaa
+        }
+  /* fin pagina tres        */
+  /* Inicio pagina cuatro  banner 3*/
+  .banner-3{
+    background-color:rgb(253, 251, 251); 
+    width: 100%;
+    height: 115vh;
+    flex-direction:row;
+    justify-content:center;
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    align-items: center;
+    margin-top: -40%;
+    
+    
+}
+.titulo-b3{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    padding: 10% 10% 10% 10%;
+    color: #aaa;
+    
+}
+.titulo-b3 h3{
+    font-size: 12px;
+align-items: center;
+justify-content: center;
+
+}
+.titulo-b3 h2{
+        font-size: 45px;
+    align-items: center;
+    justify-content: center;
+    color: #333333;
+}
+.titulo-b3 p{
+        color: #aaa;
+        font-size: 20px;
+    width: 100%;
+        
+}
+
+.bloqueb3{
+    /* background-color: black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+}
+.bloque-1b3{
+    /* background-color: blue; */
+    width: 50%;
+    height: 69vh ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+ .b1b3-img img{
+    width: 100%;
+    height: 59vh;
+ }
+.bloque-b2b3-img{
+    width: 100%;
+    display: flex;
+     margin: 5% 0;
+}
+.b1b3-titulo{
+    /* background-color: gray; */
+    width: 90%;
+    font-size: px;
+    display: flex;
+    text-align: left;
+}
+.b1b3-parrafo{
+    /* background-color: rgb(185, 12, 12); */
+    width:90%;
+    font-size: 15px;
+    display: flex;
+    text-align:left;
+}
+.bloque-2b3{
+    
+    width: 50%;
+    height: 69vh ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.b2b3-img img{
+    width: 100%;
+    height: 59vh;
+ }
+.bloque-b2b3-img{
+    width: 100%;
+    display: flex;
+     
+}
+.b2b3-titulo{
+    /* background-color: gray; */
+    width: 80%;
+    font-size: px;
+    display: flex;
+    text-align: left;
+   
+}
+.b2b3-parrafo{
+    /* background-color: rgb(185, 12, 12); */
+    width: 80%;
+    font-size: 15px;
+    display: flex;
+    text-align:left;
+}
+
+/* fin pagina CUATRO       */
+  /* Inicio pagina CINCO  banner 4*/
+  
+  .banner-4{     
+    width: 100%;
+    height: 90vh;
+    flex-direction:row;
+    justify-content:center;
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    align-items: center;
+    margin-top: -35%;
+    
+}
+.titulo-b4{
+   
+    flex-direction: column;
+    margin-top: 0 10%;
+    text-align: center;
+    width: 100%;
+    height: 10vh;
+    color: #aaa;
+        
+}
+.titulo-b4 h3{
+    font-size: 15px;
+ }
+.titulo-b4 h2{
+          font-size: 45px;
+  
+ }
+
+ .bannerbloque-4{
+    
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    align-items: center;
+    padding: 0 10px;
+    
+}
+
+ .bloque-der{
+    
+    width:40%;
+    height:59vh;
+    margin: 4.5% 0 ;
+
+
+ }
+ .eventosout{
+    width: 100%;
+    
+    margin: 5% 0 ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+
+ }
+ .eventosout-img{
+    width: 100%;
+
+
+ }
+ .eventosout-img img{
+    object-fit: cover;
+    width: 35%;
+    margin: 30px 0;
+    
+ }
+
+ .eventosout-texto{
+    width: 100%;
+    text-align:left;
+    margin: 30px 0;
+    color: #333;
+ }
+
+
+ .bloque-izq{
+    flex-direction: column;
+    width:40%;
+    height:59vh;
+    margin: 4.5% 0 ;
+ }
+ .eventosout-izq{
+    width: 100%;    
+    margin: 5% 0 ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+ }
+ .eventosout-img-izq{
+    width: 100%;
+
+
+ }
+ .eventosout-img-izq img{
+    object-fit: cover;
+    width: 35%;
+    margin: 30px 0;
+    
+ }
+
+ .eventosout-texto-izq{
+    width: 100%;
+    text-align:left;
+    margin: 30px 0;
+    color: #333;
+
+ }
+
+
+
+
+
+
+
