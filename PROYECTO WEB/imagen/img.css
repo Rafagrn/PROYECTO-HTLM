@@ -1,0 +1,116 @@
+  .container-logo{
+        position: fixed;/* deja el logo fijoen la pantalla  */
+        top: 20px;
+        right: 1000px;
+           
+    }
+    .contenedor {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 20vh; /* ESPACIO DE LAS CAJA ARRIBA  */
+      }.caja {
+        width: 150px;
+        height: 50px;
+        text-align: center;
+        line-height:30px;
+        color: white;
+        font-weight: bold;/* FUENTEV  EN NEGRILLA */
+      }
+      
+      /* Estilos específicos para cada caja */
+      .caja-1 {/* por que elegirnos */
+        width: 180px;
+        height: 50px;
+        line-height:30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;/* CENTRA  EL TEXT  */
+        font-family: "Raleway", Helvetica, Arial, sans-serif;
+        padding-left: 17px;
+        padding-right: 17px;
+        font-size: 13px;
+        color: #333333; 
+        position: absolute;
+        top: 10%;
+        left: 400%;/* UBICACION LINEAL  */
+        transform: translate(-50%, -50%);
+      }  
+        .caja-2 {/* nosotros */
+        width: 100px;
+        height: 50px;/* ANCHO  */
+        line-height:30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;/* CENTRA  EL TEXT  */
+        font-family: "Raleway", Helvetica, Arial, sans-serif;
+        padding-left: 17px;
+        padding-right: 17px;
+        font-size: 13px;
+        color: #333333;
+        position: absolute;
+        top: 10%;
+        left: 550%;
+        transform: translate(-50%, -50%);
+        /* background-color: #2ecc71; */
+      }
+      
+      .caja-3 {/* servicios */
+        width: 100px;
+        height: 50px;/* ANCHO  */
+        line-height:30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;/* CENTRA  EL TEXT  */
+        font-family: "Raleway", Helvetica, Arial, sans-serif;
+        padding-left: 17px;
+        padding-right: 17px;
+        font-size: 13px;
+        color: #333333;
+        position: absolute;
+        top: 10%;
+        left: 650%;
+        transform: translate(-50%, -50%);
+        /* background-color: #e74c3c; */
+      }
+      .caja-4 {/* nuestras máquinas */
+        width: 190px;
+        height: 50px;/* ANCHO  */
+        line-height:30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;/* CENTRA  EL TEXT  */
+        font-family: "Raleway", Helvetica, Arial, sans-serif;
+        padding-left: 17px;
+        padding-right: 17px;
+        font-size: 13px;
+        color: #333333;
+        position: absolute;
+        top: 10%;
+        left: 800%;
+        transform: translate(-50%, -50%);
+        /* background-color: #e74c3c; */
+      }
+        .caja-5 {/* contáctos */
+        width: 190px;
+        height: 50px;/* ANCHO  */
+        line-height:30px;
+        display: flex;
+        justify-content: space-around;
+        font-family: "Raleway", Helvetica, Arial, sans-serif;
+        padding-left: 17px;
+        padding-right: 17px;
+        font-size: 13px;
+        color: #333333;
+        align-items: center;/* CENTRA  EL TEXT  */
+        position: absolute;
+        top: 10%;
+        left: 950%;
+        transform: translate(-50%, -50%);
+        /* background-color: #923ce7; */
+    
+    }
+  
+.caja-6{
+    top: 100%;
+        }

@@ -1,0 +1,35 @@
+.position{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.slider{
+    background-image: url(../imagen/banner-01.jpg);
+    background-size: cover;
+    height:75%;
+    width: 100%;  /*  ancho  */
+    border-radius: 10px;
+    animation: animate 10s infinite;
+}
+@keyframes animate{
+        25%{
+        background-image: url(../imagen/banner-04.jpg);
+        background-size: cover;
+    }
+    
+        50%{
+        background-image: url(../imagen/banner-03.jpg);
+        background-size: cover;
+    }
+    
+        75%{
+        background-image: url(../imagen/banner-02.jpg);
+        background-size: cover;
+    }
+    
+        100%{
+        background-image: url(../imagen/banner-01.jpg);
+        background-size: cover;
+    }
+}
