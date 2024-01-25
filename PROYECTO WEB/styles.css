@@ -4,8 +4,8 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-main{
-    background-color: wheat;
+.main{
+    background-color: wheat;    
     width: 100%;
     height: 100%;
     display: flex;
@@ -14,100 +14,59 @@ main{
     font-family: "Raleway", Helvetica, Arial, sans-serif;
     align-items: center;
 }
-/* inicio Cabecera */
-    .cabecera{
-            background-color:white;
-            width: 100%;
-            height: 100px;
-            text-decoration: none;
-            
-             
-}
-.cabecera_link{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    color: #333333;
-    font-size: 20px;
-    font-weight: 600;
-    
-}
-.cabecera_img{
-    position: relative;
-        object-fit: cover;
-        top: 5%;
-        height: 80%;
-        right: -10%;
+   
 
-}
-.cabecera_a{
-    position: relative;
-    height: 30%;
-    width:64% ;
-    align-items:center;
-    background-color:white;
-    top: -55%;
-    right: -50%;
 
-    }
-    .cabecera a{
-        text-decoration: none;
-        color: #333333;
-        font-size: 14px;
-        font-weight: 600;
-       
-        
-     }
-.cabecera a:hover{
-    color: red;
-    
-}
+/* INICIO BANNER */
 .banner{
-    
+    background-color: aqua;
+    background-image: url(../imagen/banner-01.jpg);
+    background-size: cover; /* ajustar la img en la pantalla */
+    border-radius: 10px;
+    animation: animate 10s infinite;
     background-position: center;
-    width: 100%;
-    height: 80vh; 
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
+    width: 100%;
+    height:80vh;
+    justify-content: center;
     font-family: "Raleway", Helvetica, Arial, sans-serif;
     align-items: center;
 }
-
-
 .banner h1{
-    font-size: 75px;
-    color:white;
-    width: 80%;
-|   height: 10%;
-     position: absolute;
-     top: 40%;
-     left: 15%;
-          
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height:80vh; 
+    font-size: 65px;  
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    align-items: center;
+    color: white;
+
 }
 .banner h2{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: center;  
     font-size: 18px;
     font-style: italic;
-    color:white;
-    width: 70%;
-    height: 15%;
-    position: absolute;
-    text-align: center;
-    top: 55%;
-     left: 18%;
-       
-              
+    color:white;        
+    width: 60%;
+    height:80vh;    
+    color: white;         
 }
 .button1{
     display: flex;
     position: absolute;
-    background-color: #333333;
+    background-color:#5f2c2b;
     align-items: center;
-    height: 6%;
-    width: 15%;
+    justify-content: center;
+    text-align: center;
+    height: 7%;
+    width: 16%;
     top:80%;
     right: 55%; 
     font-size: 16px;
@@ -121,9 +80,10 @@ main{
     position: absolute;
     background-color:transparent;
     align-items: center;
-    text-align:justify;
-    height: 6%;
-    width: 12,5%;
+    justify-content: center;
+    text-align:center;
+    height: 7%;
+    width: 16%;
     top:80%;
     left: 55%;
     font-size: 16px;
@@ -132,7 +92,30 @@ main{
 
 }
 
-/* inicio hoja tres */
+/* inicio animacion */
+@keyframes animate{
+    25%{
+    background-image: url(../imagen/banner-04.jpg);
+    background-size: cover;
+}
+
+    50%{
+    background-image: url(../imagen/banner-03.jpg);
+    background-size: cover;
+}
+
+    75%{
+    background-image: url(../imagen/banner-02.jpg);
+    background-size: cover;
+}
+
+    100%{
+    background-image: url(../imagen/banner-01.jpg);
+    background-size: cover;
+}
+}
+ /* fin animacion */
+/* INICIO 2 BANNER */
 .banner-2{
     background-color:rgb(253, 251, 251) ;
     width: 100%;
@@ -220,20 +203,43 @@ justify-content: center;
         width: 80%;
         display: flex;
         margin: 10% 0;
+        transition: 2s;
  }
+ .bloque-1 img:hover{
+    transform: scale(1.2);
+    transition: 2s;
+ }
+
+    
 .bloque-2 img{
     width: 80%;
     display: flex;
      margin: 5% 0;
+     transition: 2s;
  }
- .bloque-3 img{
-    width: 80%;    
+ .bloque-2 img:hover{
+    transform: scale(1.2);
+    transition: 2s;
+ }
+  .bloque-3 img{
+    width: 80%; 
+    transition: 2s;   
+ }
+
+ .bloque-3 img:hover{
+    transform: scale(1.2);
+    transition: 2s;
  }
 
 .bloque-4 img{
-   width: 80%;    
+   width: 80%;
+   transition: 2s;    
 }
 
+.bloque-4 img:hover{
+    transform: scale(1.2);
+    transition: 2s;
+}
 .b1-titulo {
  color: #333333;   
 }
@@ -263,9 +269,11 @@ color: #aaa
 .b4-parrafo{      
 color: #aaa
         }
-  /* fin pagina tres        */
-  /* Inicio pagina cuatro  banner 3*/
-  .banner-3{
+
+/* FIN 2 BANNER */
+
+/* INICIO 3 BANNER */
+.banner-3{
     background-color:rgb(253, 251, 251); 
     width: 100%;
     height: 115vh;
@@ -273,8 +281,7 @@ color: #aaa
     justify-content:center;
     font-family: "Raleway", Helvetica, Arial, sans-serif;
     align-items: center;
-    margin-top: -40%;
-    
+      
     
 }
 .titulo-b3{
@@ -387,34 +394,40 @@ justify-content: center;
     text-align:left;
 }
 
-/* fin pagina CUATRO       */
-  /* Inicio pagina CINCO  banner 4*/
-  
-  .banner-4{     
+/* FIN 3 BANNER */
+
+ /* INICIO 4 BANNER */
+
+ .banner-4{   
+    background-color: #f4f0f0; 
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     flex-direction:row;
     justify-content:center;
     font-family: "Raleway", Helvetica, Arial, sans-serif;
     align-items: center;
-    margin-top: -35%;
     
 }
-.titulo-b4{
-   
+.titulo-b4{   
+    background-color:#f4f0f0;
+    display: flex;
     flex-direction: column;
-    margin-top: 0 10%;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 10vh;
+    height: 20vh;    
     color: #aaa;
         
 }
 .titulo-b4 h3{
+    align-items: center;
+    justify-content: center;      
     font-size: 15px;
+    color: #aaa;
  }
 .titulo-b4 h2{
           font-size: 45px;
+          color: #333
   
  }
 
@@ -427,85 +440,247 @@ justify-content: center;
     justify-content:center;
     font-family: "Raleway", Helvetica, Arial, sans-serif;
     align-items: center;
-    padding: 0 10px;
-    
+    padding: 0 30px;    
 }
+ .bloque-izq{
+    
+    width:100%;
+    height:60vh;
+    margin top|: 0 10% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10% 15%;   
+    
+ }
+ .eventosout1{
+    background-color:white;
+    width: 85%;  
+    height: 30vh;      
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;  
+    padding:0 10%;  
+    margin: 5% 0;
+ } 
+    
+ .eventosout1 img{
+    width: 12%;    
+ } 
+
+ .eventosout1-texto{
+    font-size: 12px;
+    width: 100%;
+    text-align:left;
+    margin: 30px;
+    color: #333;
+ }
+
+ .eventosout2{
+    background-color:white;
+    width: 85%;  
+    height: 30vh;      
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    padding:0 10%;    
+ }     
+ .eventosout2 img{
+    width:12%;    
+ } 
+
+ .eventosout2-texto{
+    font-size: 12px;
+    width: 100%;
+    text-align:left;
+    margin: 30px;
+    color: #333;
+ }
+
+ /* ...... */
 
  .bloque-der{
     
-    width:40%;
-    height:59vh;
-    margin: 4.5% 0 ;
-
-
- }
- .eventosout{
-    width: 100%;
-    
-    margin: 5% 0 ;
+    width:100%;
+    height:60vh;
+    margin top|: 0 10% ;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: start;
-
- }
- .eventosout-img{
-    width: 100%;
-
-
- }
- .eventosout-img img{
-    object-fit: cover;
-    width: 35%;
-    margin: 30px 0;
-    
- }
-
- .eventosout-texto{
-    width: 100%;
-    text-align:left;
-    margin: 30px 0;
-    color: #333;
- }
-
-
- .bloque-izq{
     flex-direction: column;
-    width:40%;
-    height:59vh;
-    margin: 4.5% 0 ;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10% 15%;   
+    
  }
- .eventosout-izq{
-    width: 100%;    
-    margin: 5% 0 ;
+ .eventosout3{
+    background-color: white;
+    width: 85%;  
+    height: 30vh;      
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: start;
- }
- .eventosout-img-izq{
-    width: 100%;
-
-
- }
- .eventosout-img-izq img{
-    object-fit: cover;
-    width: 35%;
-    margin: 30px 0;
+    align-items: center;  
+    padding:0 10%;  
+    margin: 5% 0;
+ } 
     
- }
+ .eventosout3 img{
+    width: 12%;    
+ } 
 
- .eventosout-texto-izq{
+ .eventosout3-texto{
+    font-size: 12px;
     width: 100%;
     text-align:left;
-    margin: 30px 0;
+    margin: 30px;
     color: #333;
+ }
 
+ .eventosout4{
+    background-color: white;
+    width: 85%;  
+    height: 30vh;      
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    padding:0 10%;    
+ }     
+ .eventosout4 img{
+    width:12%;    
+ } 
+
+ .eventosout4-texto{
+    font-size: 12px;
+    width: 100%;
+    text-align:left;
+    margin: 30px;
+    color: #333;
  }
 
 
+ /* FIN 4 BANNER */
+/* INICIO 5 BANNER */
+ 
+.banner5{
+    
+    background-image: url(../imagen/banner-5.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    align-items: center;
+               
+}
 
+.banner5 img{
+    width: 5%;
+    
+}
+.banner5 h3{
+    
+    color: #e9e5e5;
+    font-size: 35px;
+}
 
+/* FIN 5 BANNER */
+/* INCIO BANNER6 */
 
+.banner6{   
+    background-color: #f4f0f0; 
+    width: 100%;
+    height: 100vh;
+    flex-direction:row;
+    justify-content:center;
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    align-items: center;
+    
+}
+.titulo-b6{   
+    background-color:#f4f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    padding: 10% 10% 10% 10%;
+    color: #aaa;    
+}
+.titulo-b6 h3{
+    align-items: center;
+    justify-content: center;      
+    font-size: 15px;
+    color: #aaa;
+ }
+.titulo-b6 h2{
+          font-size: 35px;
+          color: #333
+  
+ }
+ .titulo-b6 p{
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: #333
+    
+        
 
+ }
 
+ .bannerbloque-6{
+    background-color: gray;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction:row;
+    background-size: cover;
+    justify-content:center;
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    align-items: center;
+    padding: 10px 10px 10px 100px ; 
+       
+}    
+.img1{
+    width: 23%;
+    cursor: pointer;
+    transition: 2s;
+}
+.img1:hover{
+    transform: scale(1.8);
+    transition: 2s;
+}
+.img2{
+    width: 23%;
+    cursor: pointer;
+    transition: 2s;
+}
+.img2:hover{
+    transform: scale(1.8);
+    transition: 2s;
+}
+.img3{
+    width: 23%;
+    cursor: pointer;
+    transition: 2s;
+}
+.img3:hover{
+    transform: scale(1.8);
+    transition: 2s;
+}
+.img4{
+    width: 23%;
+    cursor: pointer;
+    transition: 2s;
+}
+.img4:hover{
+    transform: scale(1.8);
+    transition: 2s;
+}
+
+/* FIN 6 BANNER */
